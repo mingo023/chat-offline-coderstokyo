@@ -1,0 +1,53 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='icon', href='./picture/chat.png')
+    meta(property='og:title', content='Chat Cotoky')
+    meta(property='og:description', content='Webchat template Responsive make by Lmint - Coders.Tokyo')
+    meta(property='og:image', content='https://lmint3010.github.io/coderstokyochat/picture/Desktop.png')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.3.1/css/all.css')
+    link(rel='stylesheet', href='css/chat.css')
+    script(src='js/animation.js')
+    title Chat Cotoky
+  body
+    .container
+      .users
+        h1 Coders Tokyo
+        ul.list-user
+          li
+            i.fas.fa-circle
+            |  Lisa America
+          li
+            i.fas.fa-circle
+            |  John Hamster
+          li
+            i.fas.fa-circle
+            |  Dinamo Smith
+          li
+            i.fas.fa-circle
+            |  Zack Henry
+          li
+            i.fas.fa-circle
+            | Hellen Nico
+      .top-content
+        button.top-dropdown
+          i.fas.fa-caret-down
+        p John Hamster
+        .tools
+          i.fas.fa-phone
+          i.fas.fa-video
+          i.fas.fa-info-circle
+      .middle-content
+        each message in messages      
+          div(class=message.person)
+            span John Hamster
+            .chat-content= message.content
+            small 02:00
+      .bottom-content
+        input(autofocus='', placeholder='Write here...', spellcheck='false')
+        button.submit Send
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js")
+    script(src="js/socket.js")   

@@ -1,0 +1,21 @@
+{
+  "name": "chat-offline-coderstokyo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0",
+    "md5": "^2.2.1",
+    "pug": "^2.0.4",
+    "shortid": "^2.2.14",
+    "socket.io": "^2.2.0"
+  }
+}
